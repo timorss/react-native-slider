@@ -242,9 +242,10 @@ export default class Slider extends PureComponent {
       valueVisibleStyle.opacity = 0;
     }
 
-    var minimumTrackStyle = {
+      var minimumTrackStyle = {
       position: 'absolute',
       width: Animated.add(thumbLeft, thumbSize.width / 2),
+      height: this.props.minimumTrackHeight,
       backgroundColor: minimumTrackTintColor,
       ...valueVisibleStyle
     };
